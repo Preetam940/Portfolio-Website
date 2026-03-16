@@ -1,0 +1,31 @@
+{% extends "main/base.html"%}
+{% load static %}
+{% block title %} Projects {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'main/css/Projects.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="projects">
+    <h1>Projects</h1>
+    <h2 id="firsth2">Passvault</h2>
+    <div id="Passvault">
+        <p> Developed a CLI-based password generator and manager using Python.Implemented functionalities to generate strong passwords, save them to a file, read stored passwords, and delete the file
+when needed. Applied file handling, and random <br> module and OS module to ensure usability.</p>
+    </div>
+    <h2 id="secondh2">Portfolio Website</h2>
+    <div id="Portfolio">
+        <p>This is a personal portfolio website developed using Django.
+The project demonstrates the implementation of core Django <br>concepts such as Views, URL Routing, and Template Inheritance.</p>
+    </div>
+    <div id="Problemsolving">
+        <h1>Problem Solving</h1>
+        <p>Solved many coding problems on Leetcode, Codeforces, CodeChef. You can check the links below...</p>
+       <a href="https://leetcode.com/u/Preet_am26">Leetcode</a>
+       <a href="https://codeforces.com/profile/Preet.am26">CodeForces</a>
+       <a href="https://www.codechef.com/users/preetam940">CodeChef</a>
+    </div>
+</div>
+{% endblock %}
+

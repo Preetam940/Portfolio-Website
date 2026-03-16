@@ -1,0 +1,20 @@
+{% extends "main/base.html"%}
+{% load static %}
+{% block title %} Contact {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'main/css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <h2>Contact Me</h2>
+
+    <p>Email: preetampatel940@gmail.com</p>
+
+    <a id="first"  href="{% static 'main/files/NewResume2 (1).pdf' %}" download>
+        Download Resume
+    </a>
+</section>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "main/base.html"%}
+{% load static %}
+{% block title %} Home {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+{% endblock %}
+
+{% block content %}
+<div class="home">
+    <div id="intro">
+         <h1>Hi, I'm Preetam Patel</h1>
+         <p id="P1">Aspiring Software Developer</p>
+         <p id="P2">I am a Computer Science student passionate about problem solving and backend development.
+I have solved 150+ DSA problems and built projects using Django.</p>
+    </div>
+    <div id="skills">
+        <i class="ri-code-line"></i>
+        <h4>Programming</h4>
+    </div>
+   <div class="skill-container">
+        <div id="skill-box1">C</div>
+        <div id="skill-box2">C++</div>
+        <div id="skill-box3">Python</div>
+        <div id="skill-box4">DSA</div>
+    </div>
+
+    <div id="webskills">
+        <i class="ri-global-line"></i>
+        <h4>Web</h4>
+    </div>
+     <div class="web">
+        <div id="web1">HTML</div>
+        <div id="web2">CSS</div>
+        <div id="web3">JS</div>
+        <div id="web4">Django</div>
+    </div>
+
+     <div id="subjectskills">
+        <span class="material-symbols-outlined">subject</span>
+        <h4>Subjects</h4>
+    </div>
+     <div class="subjects">
+        <div id="sub1">OOPS</div>
+        <div id="sub2">Computer Networks</div>
+        <div id="sub3">DBMS</div>
+        <div id="sub4">OS</div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+ 
